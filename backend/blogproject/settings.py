@@ -20,7 +20,7 @@ SECRET_KEY = 'django-insecure-dev-key-change-in-production'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blog1.com', 'blog2.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['blog1.com', 'blog2.com', 'example.com', 'localhost', '127.0.0.1']
 
 # Trust proxy headers (needed for X-Forwarded-Host to work)
 # This allows Django to detect the correct site when requests come through Next.js proxy
@@ -165,6 +165,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://blog1.com:3000",
     "http://blog2.com:3000",
     "http://localhost:3000",
+    "http://example.com:3000",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
